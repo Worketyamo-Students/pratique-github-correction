@@ -17,3 +17,58 @@ html{
 * {
 	box-sizing: border-box;
 }
+
+.container {
+	width: min(1220px, calc(100% - 80px));
+	margin-inline: auto;
+}
+
+.site-header {
+	padding: 22px 0;
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+.brand {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--primary);
+}
+
+.main-nav {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+	gap: 42px;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list a {
+	font-size: 20px;
+	font-weight: 500;
+	color: #66666e;
+	transition: color 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+	color: var(--primary);
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
